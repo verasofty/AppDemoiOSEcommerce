@@ -22,8 +22,21 @@ Procedimiento
 
 ## Uso del framework
 
-1.- Añadir el *Protocol* **CallbackTransaction**
+1.- Añadir el *Protocol* **CallbackTransaction**, e implementar el método de **completedTransaction()**
 ```swift 
 class ViewController: UIViewController, CallbackTransaction {
+```
+```swift 
+    func completedTransaction(response: KashPayResponse) {
+        print("== completedTransaction() ==")
+        
+        if (response.success) {
+            lbData.textColor = .black
+            lbData.text = "Transacción realizada con éxitoso! \nNúmero de autorización: \(response.authorizationNumber ?? "000")"
+        } else {
+            lbData.textColor = .red
+            lbData.text = "Transacción NO realizada! \nError: \(response.errorMessage ?? "errorMessage")"
+        }
+    }
 ```
 
