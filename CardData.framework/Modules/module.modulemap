@@ -1,0 +1,11 @@
+framework module CardData {
+  umbrella header "CardData.h"
+
+  export *
+  module * { export * }
+}
+
+module CardData.Swift {
+    header "CardData-Swift.h"
+    requires objc
+}

@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Enter your credit or debit card details"; ObjectID = "0Xg-gt-2Ua"; */
+"0Xg-gt-2Ua.text" = "Ingrese los datos de su tarjeta de crédito o débito";
+
+/* Class = "UITextField"; placeholder = "Year (YY)"; ObjectID = "3OF-8g-qcA"; */
+"3OF-8g-qcA.placeholder" = "Año (YY)";
+
+/* Class = "UITextField"; placeholder = "Card Number"; ObjectID = "6h1-7s-dCL"; */
+"6h1-7s-dCL.placeholder" = "Número Tarjeta";
+
+/* Class = "UILabel"; text = "Expiration Date"; ObjectID = "ED6-yT-aEd"; */
+"ED6-yT-aEd.text" = "Fecha de Expiración";
+
+/* Class = "UIButton"; normalTitle = "Pay"; ObjectID = "KsK-Bq-oPo"; */
+"KsK-Bq-oPo.normalTitle" = "Pagar";
+
+/* Class = "UITextField"; placeholder = "Month (MM)"; ObjectID = "UP2-x3-4Ch"; */
+"UP2-x3-4Ch.placeholder" = "Mes (MM)";
+
+/* Class = "UILabel"; text = "/"; ObjectID = "ZV9-ZY-nMD"; */
+"ZV9-ZY-nMD.text" = "/";
+
+/* Class = "UITextField"; placeholder = "Code Security (CVV)"; ObjectID = "cH2-BW-pCd"; */
+"cH2-BW-pCd.placeholder" = "Código de seguridad (CVV)";
