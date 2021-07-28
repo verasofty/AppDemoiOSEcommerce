@@ -26,6 +26,8 @@ Procedimiento
 ```swift 
 class ViewController: UIViewController, CallbackTransaction {
 ```
+   En este método, se recibirá la respuesta de la transacción, siendo validada por medio de *response.sucess*, para saber si fue correcta o no respectivamente.
+
 ```swift 
     func completedTransaction(response: KashPayResponse) {
         print("== completedTransaction() ==")
