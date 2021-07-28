@@ -41,8 +41,18 @@ class ViewController: UIViewController, CallbackTransaction {
         }
     }
 ```
+2.- Antes de realizar la llamada al ViewController del ingreso de datos, se debe llenar el **Dictionary** llamado 
 
-2.- Mostrar pantalla de ingreso de datos para la venta 
+```swift 
+private func fillDataRequest() {
+        DataConfig.request.updateValue("testTomaz@gmail.com", forKey: CardDataConstants.HMUser)
+        DataConfig.request.updateValue("5.00", forKey: CardDataConstants.HMAmmount)
+        DataConfig.request.updateValue("19.4257265", forKey: CardDataConstants.HMLatitude)
+        DataConfig.request.updateValue("99.1696627", forKey: CardDataConstants.HMLongitude)
+    }
+    ```
+
+3.- Mostrar pantalla de ingreso de datos para la venta 
    Mediante este código de ejemplo, se hará la llamada para mostrar el viewController de ingreso de datos de la tarjeta.
 
 ```swift 
