@@ -15,6 +15,8 @@
 		AC5B042226AF2E0B00A10FA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC5B042026AF2E0B00A10FA6 /* LaunchScreen.storyboard */; };
 		AC5B042D26AF2E0B00A10FA6 /* DemoFrameworkCardDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B042C26AF2E0B00A10FA6 /* DemoFrameworkCardDataTests.swift */; };
 		AC5B043826AF2E0B00A10FA6 /* DemoFrameworkCardDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5B043726AF2E0B00A10FA6 /* DemoFrameworkCardDataUITests.swift */; };
+		AC5B046426AF3F4F00A10FA6 /* CardData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5B046226AF3F4C00A10FA6 /* CardData.framework */; };
+		AC5B046526AF3F4F00A10FA6 /* CardData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC5B046226AF3F4C00A10FA6 /* CardData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		AC5B046626AF3F4F00A10FA6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC5B046526AF3F4F00A10FA6 /* CardData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		AC5B041226AF2E0900A10FA6 /* DemoFrameworkCardData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoFrameworkCardData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5B041526AF2E0900A10FA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,9 @@
 		AC5B043326AF2E0B00A10FA6 /* DemoFrameworkCardDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoFrameworkCardDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5B043726AF2E0B00A10FA6 /* DemoFrameworkCardDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoFrameworkCardDataUITests.swift; sourceTree = "<group>"; };
 		AC5B043926AF2E0B00A10FA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5B046226AF3F4C00A10FA6 /* CardData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CardData.framework; sourceTree = "<group>"; };
+		AC5B047426AF47E200A10FA6 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		AC5B047526AF47E200A10FA6 /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5B046426AF3F4F00A10FA6 /* CardData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +99,12 @@
 		AC5B040926AF2E0900A10FA6 = {
 			isa = PBXGroup;
 			children = (
+				AC5B046226AF3F4C00A10FA6 /* CardData.framework */,
 				AC5B041426AF2E0900A10FA6 /* DemoFrameworkCardData */,
 				AC5B042B26AF2E0B00A10FA6 /* DemoFrameworkCardDataTests */,
 				AC5B043626AF2E0B00A10FA6 /* DemoFrameworkCardDataUITests */,
 				AC5B041326AF2E0900A10FA6 /* Products */,
+				AC5B044B26AF308C00A10FA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +150,13 @@
 			path = DemoFrameworkCardDataUITests;
 			sourceTree = "<group>";
 		};
+		AC5B044B26AF308C00A10FA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +167,7 @@
 				AC5B040E26AF2E0900A10FA6 /* Sources */,
 				AC5B040F26AF2E0900A10FA6 /* Frameworks */,
 				AC5B041026AF2E0900A10FA6 /* Resources */,
+				AC5B046626AF3F4F00A10FA6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,6 +243,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-419",
 			);
 			mainGroup = AC5B040926AF2E0900A10FA6;
 			productRefGroup = AC5B041326AF2E0900A10FA6 /* Products */;
@@ -300,6 +331,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AC5B041C26AF2E0900A10FA6 /* Base */,
+				AC5B047426AF47E200A10FA6 /* es-419 */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -308,6 +340,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				AC5B042126AF2E0B00A10FA6 /* Base */,
+				AC5B047526AF47E200A10FA6 /* es-419 */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -319,6 +352,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -380,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -438,7 +473,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4D98L5L8Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DemoFrameworkCardData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +497,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C4D98L5L8Y;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DemoFrameworkCardData/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
