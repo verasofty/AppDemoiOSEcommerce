@@ -47,6 +47,7 @@ class ViewController: UIViewController, CallbackTransaction {
         DataConfig.request.updateValue("5.00", forKey: CardDataConstants.HMAmmount)
         DataConfig.request.updateValue("19.4257265", forKey: CardDataConstants.HMLatitude)
         DataConfig.request.updateValue("99.1696627", forKey: CardDataConstants.HMLongitude)
+        DataConfig.request.updateValue("000002", forKey: CardDataConstants.HMTransactionID)
     }
 
     //MARK:- Actions
@@ -58,8 +59,6 @@ class ViewController: UIViewController, CallbackTransaction {
         initialVC.modalPresentationStyle = .fullScreen
         self.present(initialVC, animated: true, completion: nil)
     }
-    
-    
     
 }
 
