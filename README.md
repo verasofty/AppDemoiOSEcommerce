@@ -41,11 +41,18 @@ class ViewController: UIViewController, CallbackTransaction {
         }
     }
 ```
-2.- Antes de realizar la llamada al ViewController del ingreso de datos, se debe llenar el **Dictionary** llamado 
+   No olvidar setear el callback para evitar enviarlo nulo, de lo contrario NO obtendremos la respuesta
+   
+   ```swift 
+   DataConfig.callback = self
+   ````  
+   
+2.- Antes de realizar la llamada al ViewController del ingreso de datos, se debe llenar el **Dictionary** llamado *request* de *DataConfig*
 
 ```swift 
 
 //Ejemplo de llenado del Dictionary (Deberá ser llenado mediante valores reales)
+
 private func fillDataRequest() {
         DataConfig.request.updateValue("testTomaz@gmail.com", forKey: CardDataConstants.HMUser)
         DataConfig.request.updateValue("5.00", forKey: CardDataConstants.HMAmmount)
@@ -53,7 +60,7 @@ private func fillDataRequest() {
         DataConfig.request.updateValue("99.1696627", forKey: CardDataConstants.HMLongitude)
     }
     
-    //Keys específicas donde se enviarán los datos obtenido
+//Keys específicas donde se enviarán los datos obtenido
     
     open class CardDataConstants {
     public static let EMPTY_STRING = ""
