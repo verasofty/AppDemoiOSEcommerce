@@ -58,6 +58,7 @@ private func fillDataRequest() {
         DataConfig.request.updateValue("5.00", forKey: CardDataConstants.HMAmmount)
         DataConfig.request.updateValue("19.4257265", forKey: CardDataConstants.HMLatitude)
         DataConfig.request.updateValue("99.1696627", forKey: CardDataConstants.HMLongitude)
+        DataConfig.request.updateValue("000002", forKey: CardDataConstants.HMTransactionID)
     }
     
 //Keys específicas donde se enviarán los datos obtenido
@@ -68,6 +69,7 @@ private func fillDataRequest() {
     public static let HMAmmount = "HMAmmount"
     public static let HMLatitude = "HMLatitude"
     public static let HMLongitude = "HMLongitude"
+    public static let HMTransactionID = "HMTransactionID"
     }
 ````
 
