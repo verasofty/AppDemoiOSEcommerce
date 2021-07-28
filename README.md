@@ -8,3 +8,12 @@ Version | Autor | Fecha | Descripcion
 1.1 | Judá Escalera| 2020-09-24 | Comentarios agregados
 1.2 | Judá Escalera| 2021-07-25 | Añade respuesta KashPayResponse
 
+# Integración con el proyecto
+
+## Configuración
+
+Procedimiento
+
+1.- Una vez descargada la carpeta **CardData.framework**, se arrastra y suelta en la raíz del proyecto
+
+<img width="707" alt="Captura de Pantalla 2021-07-27 a la(s) 23 45 28" src="https://user-images.githubusercontent.com/28871704/127265212-47b3c77c-a70f-428f-a82a-31f88721fe9d.png">
