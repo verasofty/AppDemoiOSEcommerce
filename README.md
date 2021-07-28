@@ -42,3 +42,14 @@ class ViewController: UIViewController, CallbackTransaction {
     }
 ```
 
+2.- Mostrar pantalla de ingreso de datos para la venta 
+   Mediante este código de ejemplo, se hará la llamada para mostrar el viewController de ingreso de datos de la tarjeta.
+
+```swift 
+      let frameworkBundle = Bundle(identifier: "com.credencial.CardData")
+      let storyboard = UIStoryboard(name: "CardData", bundle: frameworkBundle)
+      let initialVC = storyboard.instantiateViewController(withIdentifier: "CardData")  
+      initialVC.modalPresentationStyle = .fullScreen
+      self.present(initialVC, animated: true, completion: nil)
+
+```
