@@ -20,3 +20,10 @@ Procedimiento
 2.- Una vez agregado, seleccionamos el proyecto, target -> Frameworks, libraries and Embedded Content y en nuestro framework lo seteamos como *Embed & Sign*
 <img width="1229" alt="Captura de Pantalla 2021-07-27 a la(s) 23 50 22" src="https://user-images.githubusercontent.com/28871704/127266005-62c500f7-41b3-4a4b-befb-bd45d660612a.png">
 
+## Uso del framework
+
+1.- Añadir el *Protocol* **CallbackTransaction**
+```swift 
+class ViewController: UIViewController, CallbackTransaction {
+```
+
